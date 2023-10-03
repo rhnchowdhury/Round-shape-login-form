@@ -10,14 +10,14 @@ body {
 }
 
 .container {
-    min-height: 60vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     letter-spacing: 1px;
 }
 
-.login {
+.full-screen {
     background: linear-gradient(90deg, #5d54a4, #7c78b8);
     position: relative;
     height: 600px;
@@ -25,7 +25,7 @@ body {
     box-shadow: 0px 0px 24px #5c5696;
 }
 
-.login-form {
+.login {
     z-index: 1;
     position: relative;
     height: 100%;
@@ -64,6 +64,7 @@ body {
 }
 
 .span-bg3 {
+    z-index: -1;
     width: 190px;
     height: 540px;
     background: linear-gradient(270deg, #5d54a4, #6a679e);
@@ -79,4 +80,69 @@ body {
     top: 420px;
     right: 50px;
     border-radius: 60px;
+}
+
+.login-form {
+    width: 320px;
+    padding: 20px;
+    padding-top: 120px;
+}
+
+.input-box {
+    position: relative;
+    padding: 20px 0;
+}
+
+i {
+    top: 30px;
+    color: #7875b5;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #d1d1d4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 75%;
+    transition: .2s;
+}
+
+input:active,
+input:focus,
+input:hover {
+    outline: none;
+    border-bottom-color: #6a679e;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #d4d3e8;
+    text-transform: uppercase;
+    width: 100%;
+    color: #4c4890;
+    box-shadow: 0 2px 2px #5c5696;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:hover {
+    border-color: #6a679e;
+    outline: none;
+}
+
+.btn-icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: #7875b5;
 }
